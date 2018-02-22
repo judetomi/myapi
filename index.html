@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Prime number checker</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery.rest.min.js"></script>
+        <script src="js/myapi.js"></script>
+        <style>
+          
+          body {
+            width: 100%;
+          }
+          
+          form {
+            max-width: 400px;
+            padding: 23px 28px;
+            border: 1px solid #ccc;
+            margin: auto 0;
+          }
+          
+          input {
+            margin: 10px 0;
+          }
+          
+          #result {
+            display:none;
+          }
+          
+        </style>
+    </head>
+
+    <body>
+        <div id="result">
+            <p class="sum">Summa on: <span></span></p>
+            <p class="isPrime">Luku on alkuluku: <span></span></p>
+        </div>
+        <form id="apiform" method="get" action="./">
+          <label for="myinput">Syötä numero(t)</label>
+          <input id="myinput" type="text" name="numbers"><br>
+          <input type="radio" name="action" value="sumandcheck" id="a1" checked="true"><label for="a1">Laske ja tarkista</label>
+          <input type="radio" name="action" value="check" id="a2"><label for="a2">Tarkista</label><br>
+          <input id="submit-button" autocomplete=""type="submit" value="Lähetä">
+        </form> 
+    </body>
+</html>
